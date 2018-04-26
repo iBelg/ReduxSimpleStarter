@@ -14,8 +14,14 @@ class PostsIndex extends React.Component {
     render() {
         return (
             <div className="row">
-                <div className=""></div>
-                <div className="col-lg-12" >
+                <div className="col-lg-12">
+                    <div className="text-xs-right">
+                        <Link className="btn btn-primary pull-right" to="/posts/new" >
+                            Add a Post
+                        </Link>
+                    </div>
+                </div>
+                <div className="col-lg-12">
                     <h3>Posts</h3>
                     <div>
                         {this.renderPosts()}
